@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { sdk } from '@farcaster/miniapp-sdk';
+import sdk from '@farcaster/frame-sdk';
 import { CreateTokenForm } from '@/components/CreateTokenForm';
 import { TokenHistory } from '@/components/TokenHistory';
 import { Token } from '@/types';

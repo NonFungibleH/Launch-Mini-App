@@ -92,11 +92,6 @@ export function CreateTokenForm({ userAddress, onTokenCreated }: CreateTokenForm
         totalSupply: '',
       });
 
-      // Show success notification
-      await sdk.actions.showToast({
-        message: `Token ${formData.symbol} created successfully!`,
-      });
-
     } catch (err: any) {
       console.error('Error creating token:', err);
       setError(err.message || 'Failed to create token. Please try again.');

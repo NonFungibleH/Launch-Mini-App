@@ -2,7 +2,7 @@
   "frame": {
     "name": "Launch",
     "version": "1",
-    "iconUrl": "https://launch-mini-app-sqgp.vercel.app",
+    "iconUrl": "https://launch-mini-app-sqgp.vercel.app/icon.png",
     "homeUrl": "https://launch-mini-app-sqgp.vercel.app",
     "buttonTitle": "Create your own crypto token",
     "splashImageUrl": "https://launch-mini-app-sqgp.vercel.app/splash.png",
@@ -17,7 +17,7 @@
       "launch",
       "token"
     ],
-    "heroImageUrl": "https://launch-mini-app-sqgp.vercel.app/image.png"
+    "heroImageUrl": "https://launch-mini-app-sqgp.vercel.app/splash.png"
   },
   "accountAssociation": {
     "header": "eyJmaWQiOjU1ODY5NCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDI5OTRlMjIyZjRiNzVjMTUzMjJFODg4QTZjODUyOTcxNjkwNDM3OWIifQ",

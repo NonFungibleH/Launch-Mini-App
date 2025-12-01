@@ -8,15 +8,9 @@
     "splashImageUrl": "https://launch-mini-app-sqgp.vercel.app/splash.png",
     "splashBackgroundColor": "#0052FF",
     "subtitle": "Create your own token",
-    "description": "Mint a token on Base",
+    "description": "Mint a token on Base in seconds",
     "primaryCategory": "utility",
-    "tags": [
-      "generate",
-      "tge",
-      "mint",
-      "launch",
-      "token"
-    ],
+    "tags": ["generate", "tge", "mint", "launch", "token"],
     "heroImageUrl": "https://launch-mini-app-sqgp.vercel.app/splash.png"
   },
   "accountAssociation": {

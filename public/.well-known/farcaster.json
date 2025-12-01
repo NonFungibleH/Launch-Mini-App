@@ -1,26 +1,24 @@
 {
-  "accountAssociation": {
-    "header": "eyJmaWQiOjAsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwIn0",
-    "payload": "eyJkb21haW4iOiJsYXVuY2gtbWluaS1hcHAtc3FncC52ZXJjZWwuYXBwIn0=",
-    "signature": "MHgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAw"
-  },
-  "miniapp": {
-    "version": "1",
+  "frame": {
     "name": "Launch",
-    "homeUrl": "https://launch-mini-app-sqgp.vercel.app",
+    "version": "1",
     "iconUrl": "https://launch-mini-app-sqgp.vercel.app/icon.png",
+    "homeUrl": "https://launch-mini-app-sqgp.vercel.app",
+    "imageUrl": "https://launch-mini-app-sqgp.vercel.app/image.png",
+    "buttonTitle": "Open Mini App",
     "splashImageUrl": "https://launch-mini-app-sqgp.vercel.app/splash.png",
     "splashBackgroundColor": "#0052FF",
+    "webhookUrl": "https://launch-mini-app-sqgp.vercel.app/api/webhook",
     "subtitle": "Create your own token on Base in seconds",
-    "description": "Create your own token on Base in seconds",
-    "screenshotUrls": [],
-    "primaryCategory": "defi",
-    "tags": ["defi", "token", "launchpad", "base"],
-    "heroImageUrl": "https://launch-mini-app-sqgp.vercel.app/og.png",
-    "tagline": "Launch a token in seconds",
-    "ogTitle": "Launch – Create Your Token on Base",
-    "ogDescription": "The fastest way to create and launch your own token on Base.",
-    "ogImageUrl": "https://launch-mini-app-sqgp.vercel.app/og.png",
-    "noindex": false
+    "description": "The fastest way to create and launch your own token on Base",
+    "primaryCategory": "utility",
+    "tags": [
+      "mint",
+      "generate",
+      "launch",
+      "tge",
+      "deploy"
+    ],
+    "tagline": "Create your own token "
   }
 }

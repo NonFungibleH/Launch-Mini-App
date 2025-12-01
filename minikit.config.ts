@@ -4,7 +4,7 @@ export const manifest = {
   splashBackgroundColor: '#0052FF',
   homeUrl: process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000',
   imageUrl: `${process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'}/icon.png`,
-  miniAppDescription: 'Create your own token on Base in seconds',
+  miniAppDescription: 'Create your own token',
   miniAppIconUrl: `${process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'}/icon.png`,
   accountAssociation: {
     header: 'eyJmaWQiOjU1ODY5NCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDI5OTRlMjIyZjRiNzVjMTUzMjJFODg4QTZjODUyOTcxNjkwNDM3OWIifQ',

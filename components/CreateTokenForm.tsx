@@ -66,9 +66,7 @@ export function CreateTokenForm({ userAddress, onTokenCreated }: CreateTokenForm
     setError(null);
 
     try {
-      // Request wallet connection through Farcaster SDK
-      await sdk.actions.connectWallet();
-      
+      // Wallet is automatically connected via Farcaster app
       // For now, we'll show a success message
       // In production, you would actually deploy the contract here using Thirdweb
       

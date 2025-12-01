@@ -26,7 +26,7 @@ export default function RootLayout({
         <meta property="fc:miniapp" content="true" />
         <meta property="fc:miniapp:name" content="Launch" />
         <meta property="fc:miniapp:icon" content="/icon.png" />
-        <meta property="fc:miniapp:description" content="Create your own token on Base in seconds" />
+        <meta property="fc:miniapp:description" content="Create your own token" />
       </head>
       <body className={inter.className}>
         <ThirdwebProvider>

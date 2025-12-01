@@ -6,7 +6,7 @@ import { prepareContractCall } from 'thirdweb';
 import { getContract } from 'thirdweb';
 import { client, chain } from '@/lib/thirdweb';
 import { Token, TokenFormData } from '@/types';
-import { sdk } from '@farcaster/miniapp-sdk';
+import sdk from '@farcaster/frame-sdk';
 
 // Thirdweb's TokenERC20 contract for deploying ERC20 tokens
 const TOKEN_FACTORY_ADDRESS = '0x0000000000000000000000000000000000000000'; // Replace with actual Thirdweb factory

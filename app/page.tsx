@@ -15,21 +15,21 @@ export default function Home() {
   useEffect(() => {
     const init = async () => {
       try {
-        // Wait for the SDK to be ready
         const ctx = await sdk.context;
         setContext(ctx);
         
-        // Load tokens from localStorage
-        const savedTokens = localStorage.getItem(`tokens_${ctx.user.fid}`);
-        if (savedTokens) {
-          setTokens(JSON.parse(savedTokens));
+        if (ctx?.user?.fid) {
+          const savedTokens = localStorage.getItem(`tokens_${ctx.user.fid}`);
+          if (savedTokens) {
+            setTokens(JSON.parse(savedTokens));
+          }
         }
 
-        // Signal that the app is ready
         await sdk.actions.ready();
         setIsReady(true);
       } catch (error) {
         console.error('Error initializing mini app:', error);
+        setIsReady(true);
       }
     };
 
@@ -40,12 +40,10 @@ export default function Home() {
     const updatedTokens = [newToken, ...tokens];
     setTokens(updatedTokens);
     
-    // Save to localStorage
     if (context?.user?.fid) {
       localStorage.setItem(`tokens_${context.user.fid}`, JSON.stringify(updatedTokens));
     }
     
-    // Switch to history tab
     setActiveTab('history');
   };
 
@@ -62,7 +60,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-base-light via-white to-base-light">
-      {/* Header */}
       <div className="bg-gradient-to-r from-base-blue to-base-lightblue text-white py-6 px-4 shadow-lg">
         <div className="max-w-2xl mx-auto">
           <h1 className="text-3xl font-bold mb-2">🚀 Launch</h1>
@@ -70,7 +67,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Navigation Tabs */}
       <div className="max-w-2xl mx-auto px-4 mt-6">
         <div className="flex gap-2 bg-white rounded-lg p-1 shadow-md">
           <button
@@ -96,7 +92,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Content */}
       <div className="max-w-2xl mx-auto px-4 py-6">
         {activeTab === 'create' ? (
           <CreateTokenForm 
@@ -108,7 +103,6 @@ export default function Home() {
         )}
       </div>
 
-      {/* Footer */}
       <div className="max-w-2xl mx-auto px-4 py-8 text-center text-base-gray text-sm">
         <p>Built on Base • Powered by Thirdweb</p>
       </div>

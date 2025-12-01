@@ -2,24 +2,22 @@
   "frame": {
     "name": "Launch",
     "version": "1",
-    "iconUrl": "https://launch-mini-app-sqgp.vercel.app/icon.png",
+    "iconUrl": "https://launch-mini-app-sqgp.vercel.app",
     "homeUrl": "https://launch-mini-app-sqgp.vercel.app",
-    "imageUrl": "https://launch-mini-app-sqgp.vercel.app/image.png",
-    "buttonTitle": "Open Mini App",
+    "buttonTitle": "Create your own crypto token",
     "splashImageUrl": "https://launch-mini-app-sqgp.vercel.app/splash.png",
     "splashBackgroundColor": "#0052FF",
-    "webhookUrl": "https://launch-mini-app-sqgp.vercel.app/api/webhook",
-    "subtitle": "Create your own token on Base in seconds",
+    "subtitle": "Create your own crypto token",
     "description": "The fastest way to create and launch your own token on Base",
     "primaryCategory": "utility",
     "tags": [
-      "mint",
       "generate",
-      "launch",
       "tge",
-      "deploy"
+      "mint",
+      "launch",
+      "token"
     ],
-    "tagline": "Create your own token "
+    "heroImageUrl": "https://launch-mini-app-sqgp.vercel.app/image.png"
   },
   "accountAssociation": {
     "header": "eyJmaWQiOjU1ODY5NCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDI5OTRlMjIyZjRiNzVjMTUzMjJFODg4QTZjODUyOTcxNjkwNDM3OWIifQ",

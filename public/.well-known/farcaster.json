@@ -2,6 +2,7 @@
   "frame": {
     "name": "Launch",
     "version": "1",
+    "imageUrl": "https://launch-mini-app-sqgp.vercel.app/splash.png",
     "iconUrl": "https://launch-mini-app-sqgp.vercel.app/icon.png",
     "homeUrl": "https://launch-mini-app-sqgp.vercel.app",
     "splashImageUrl": "https://launch-mini-app-sqgp.vercel.app/splash.png",

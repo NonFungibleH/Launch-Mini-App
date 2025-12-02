@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect, useState } from 'react';
 import sdk from '@farcaster/frame-sdk';
 import { CreateTokenForm } from '@/components/CreateTokenForm';
@@ -15,6 +14,11 @@ export default function Home() {
   useEffect(() => {
     const init = async () => {
       try {
+        // Prevent MetaMask injection
+        if (typeof window !== 'undefined') {
+          delete (window as any).ethereum;
+        }
+
         const ctx = await sdk.context;
         setContext(ctx);
         

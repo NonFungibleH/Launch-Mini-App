@@ -14,14 +14,14 @@ export default function Home() {
   useEffect(() => {
     const init = async () => {
       try {
-        // Prevent MetaMask injection
-        if (typeof window !== 'undefined') {
-          delete (window as any).ethereum;
-        }
-
+        // Get context first
         const ctx = await sdk.context;
         setContext(ctx);
         
+        // Call ready immediately after getting context
+        sdk.actions.ready();
+        
+        // Then load tokens
         if (ctx?.user?.fid) {
           const savedTokens = localStorage.getItem(`tokens_${ctx.user.fid}`);
           if (savedTokens) {
@@ -29,10 +29,11 @@ export default function Home() {
           }
         }
 
-        await sdk.actions.ready();
         setIsReady(true);
       } catch (error) {
         console.error('Error initializing mini app:', error);
+        // Still set ready even on error
+        sdk.actions.ready();
         setIsReady(true);
       }
     };

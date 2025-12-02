@@ -1,0 +1,21 @@
+{
+  "frame": {
+    "name": "Launch",
+    "version": "1",
+    "iconUrl": "https://launch-mini-app-sqgp.vercel.app/icon.png",
+    "homeUrl": "https://launch-mini-app-sqgp.vercel.app",
+    "splashImageUrl": "https://launch-mini-app-sqgp.vercel.app/splash.png",
+    "splashBackgroundColor": "#0052FF",
+    "subtitle": "Create your own token",
+    "description": "Mint a token in seconds",
+    "primaryCategory": "utility"
+  },
+  "accountAssociation": {
+    "header": "eyJmaWQiOjU1ODY5NCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDI5OTRlMjIyZjRiNzVjMTUzMjJFODg4QTZjODUyOTcxNjkwNDM3OWIifQ",
+    "payload": "eyJkb21haW4iOiJsYXVuY2gtbWluaS1hcHAtc3FncC52ZXJjZWwuYXBwIn0",
+    "signature": "JZsh6ohlMM74K5t7i7e2/VZ/nv26mGuxFcNbzlM8lklOo3j9rhOccF1B98YwK7OBWilOeTK7j4ZPTaHmiLKv/Rw="
+  },
+  "baseBuilder": {
+    "ownerAddress": "0xC885476F424F92717C0218031b896513828a2ab7"
+  }
+}

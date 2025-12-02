@@ -23,6 +23,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            // Block MetaMask injection before it happens
+            (function() {
+              Object.defineProperty(window, 'ethereum', {
+                get: function() { return undefined; },
+                set: function() {},
+                configurable: false
+              });
+            })();
+          `
+        }} />
         <meta property="fc:miniapp" content="true" />
         <meta property="fc:miniapp:name" content="Launch" />
         <meta property="fc:miniapp:icon" content="/icon.png" />

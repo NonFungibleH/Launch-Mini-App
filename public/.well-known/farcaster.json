@@ -2,14 +2,14 @@
   "frame": {
     "name": "Launch",
     "version": "1",
-    "imageUrl": "https://launch-mini-app-sqgp.vercel.app/icon.png",
     "iconUrl": "https://launch-mini-app-sqgp.vercel.app/icon.png",
     "homeUrl": "https://launch-mini-app-sqgp.vercel.app",
     "splashImageUrl": "https://launch-mini-app-sqgp.vercel.app/splash.png",
     "splashBackgroundColor": "#0052FF",
     "subtitle": "Create your own token",
     "description": "Mint a token in seconds",
-    "primaryCategory": "utility"
+    "primaryCategory": "utility",
+    "tags": ["token", "tge", "mint", "launch", "generate"]
   },
   "accountAssociation": {
     "header": "eyJmaWQiOjU1ODY5NCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDI5OTRlMjIyZjRiNzVjMTUzMjJFODg4QTZjODUyOTcxNjkwNDM3OWIifQ",

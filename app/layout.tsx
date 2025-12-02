@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThirdwebProvider } from "@/components/ThirdwebProvider";
-
 const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: "Launch - Create Your Token",
   description: "Create your own token on Base in seconds",
@@ -14,7 +12,6 @@ export const metadata: Metadata = {
     images: ["/icon.png"],
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,18 +20,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            // Block MetaMask injection before it happens
-            (function() {
-              Object.defineProperty(window, 'ethereum', {
-                get: function() { return undefined; },
-                set: function() {},
-                configurable: false
-              });
-            })();
-          `
-        }} />
         <meta property="fc:miniapp" content="true" />
         <meta property="fc:miniapp:name" content="Launch" />
         <meta property="fc:miniapp:icon" content="/icon.png" />

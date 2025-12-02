@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import sdk from '@farcaster/frame-sdk';
 import { CreateTokenForm } from '@/components/CreateTokenForm';
 import { TokenHistory } from '@/components/TokenHistory';
@@ -10,8 +10,12 @@ export default function Home() {
   const [context, setContext] = useState<any>(null);
   const [tokens, setTokens] = useState<Token[]>([]);
   const [activeTab, setActiveTab] = useState<'create' | 'history'>('create');
+  const initialized = useRef(false);
 
   useEffect(() => {
+    if (initialized.current) return;
+    initialized.current = true;
+
     const init = async () => {
       try {
         const ctx = await sdk.context;
